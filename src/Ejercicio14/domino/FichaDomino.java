@@ -20,6 +20,10 @@ public class FichaDomino {
                f.izq==this.izq || f.dch==this.izq;
     }
 
+    public boolean encajaSinVoltear(FichaDomino f){
+        return f.izq==this.dch;
+    }
+
     @Override
     public String toString() {
         return String.format("[%s|%s]",
